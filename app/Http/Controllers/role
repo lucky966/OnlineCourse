@@ -1,0 +1,33 @@
+Level 0 (Context Diagram):
+
+    Admin dan Guru berinteraksi dengan sistem Aplikasi Jurnal Mengajar.
+
+Level 1 (DFD - Detail Interaction):
+
+    1. Proses Login:
+
+        Admin/Guru → Mengirim kredensial ke sistem → Sistem memverifikasi dan memberikan akses ke Dashboard.
+
+    2. Manajemen Pengguna (Admin):
+
+        Admin → Mengelola data guru → Sistem menyimpan atau memperbarui data pengguna dalam database.
+
+    3. Manajemen Jadwal (Admin):
+
+        Admin → Mengelola jadwal (membuat, mengedit, menghapus) → Sistem menyimpan atau memperbarui data jadwal dalam database.
+
+    4. Validasi Jurnal (Admin):
+
+        Admin → Melihat dan memvalidasi jurnal yang diisi guru → Sistem memperbarui status validasi jurnal dalam database.
+
+    5. Isi Jurnal (Guru):
+
+        Guru → Mengisi jurnal berdasarkan jadwal → Sistem menyimpan jurnal dan menunggu validasi dari admin.
+
+    6. Lihat Jadwal (Guru):
+
+        Guru → Melihat jadwal mengajar → Sistem menampilkan data jadwal yang relevan dari database.
+
+    7. Lihat Status Jurnal (Guru):
+
+        Guru → Melihat status validasi jurnal → Sistem menampilkan status validasi dari database.
